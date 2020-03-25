@@ -16,12 +16,6 @@ namespace Parsing.Tests
 		}
 
 		[Test]
-		public void XMLValidationReturnsZeroIfDocumentMatchesSchema()
-		{
-			Assert.That(XMLValidator.Validate(XMLStrings.xmlStringMatchesSchema), Is.EqualTo(0));
-		}
-
-		[Test]
 		public void XMLValidationReturnsMinusThreeIfDocumentDoesntMatchSchema()
 		{
 			Assert.That(XMLValidator.Validate(XMLStrings.xmlStringDoesntMatchSchema), Is.EqualTo(-3));

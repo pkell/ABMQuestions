@@ -20,23 +20,6 @@ namespace Parsing.Tests.TestData
 </InputDocument>
 ";
 
-		public static readonly string xmlStringMatchesSchema = $@"
-<InputDocument>
-	<DeclarationList>
-		<Declaration Command=""DEFAULT"" Version=""5.13"">
-			<DeclarationHeader>
-				<Jurisdiction>IE</Jurisdiction>
-				<CWProcedure>EXPORT</CWProcedure>
-							<DeclarationDestination>CUSTOMSTWO</DeclarationDestination>
-				<DocumentRef>41T0319781</DocumentRef>
-				<SiteID>DUB</SiteID>
-				<AccountCode>F2379539</AccountCode>
-			</DeclarationHeader>
-		</Declaration>
-	</DeclarationList>
-</InputDocument>
-";
-
 		public static readonly string xmlStringDoesntMatchSchema = $@"
 <InputDoc>
 		<Declaration Command=""DEFAULT"" Version=""5.13"">
